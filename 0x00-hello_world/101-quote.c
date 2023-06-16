@@ -8,6 +8,6 @@ int main(void)
 {
 	char* err = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(STDERR_FILENO, error_message, strlen(error_message));
+	write(STDERR_FILENO, err, strlen(err));
 	return (1);
 }
