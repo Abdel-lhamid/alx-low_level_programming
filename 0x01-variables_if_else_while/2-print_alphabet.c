@@ -5,8 +5,7 @@
  * main - a script that writes the alphabets
  * Return: 0
  */
-
-int main(void) 
+int main(void)
 {
 	char L;
 
