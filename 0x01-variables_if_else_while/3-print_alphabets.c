@@ -7,7 +7,7 @@
  * Return: 0
  */
 
-int main(void) 
+int main(void)
 {
 	char l;
 	char L;
@@ -23,6 +23,6 @@ int main(void)
 	}
 
 	putchar('\n');
-	
+
 	return (0);
 }
