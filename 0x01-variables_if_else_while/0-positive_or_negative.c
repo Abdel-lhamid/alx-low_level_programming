@@ -4,7 +4,7 @@
 /* more headers goes there */
 
 /**
- * main - runs if statments to determine whether a variable is negative ot positive
+ * main - runs if to determine whether a variable is negative ot positive
  * Return: 1
  */
 int main(void)
@@ -13,11 +13,11 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if ( n > 0 )
+	if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}
-	else if ( n == 0 )
+	else if (n == 0)
 	{
 		printf("%d is zero\n", n);
 	}
