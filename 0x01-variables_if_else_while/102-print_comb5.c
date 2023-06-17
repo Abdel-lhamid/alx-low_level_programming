@@ -23,12 +23,13 @@ int main(void)
 					putchar(' ');
 					putchar('0' + k);
 					putchar('0' + l);
-					if (!((i == '9' && j == '8' ) && (k == '9' && l == '9')))
+					if (!((i == '9' && j == '8') && (k == '9' && l == '9')))
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
+				l = '0';
 			}
 		}
 	}
