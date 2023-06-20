@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * main - program that prints _putchar
@@ -7,7 +7,12 @@
 
 int main(void)
 {
-	printf("_putchar/n");
+	char putcharr[] = "_putchar";
+	for (int i =0; i < 8; i++)
+	{
+		_putchar(putcharr[i]);
+	}
+	_putchar('\n');	
 
 	return(0);
 }
