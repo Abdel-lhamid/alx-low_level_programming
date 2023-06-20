@@ -2,6 +2,7 @@
 
 /**
  * _islower - check if lower or upper
+ * @c: character we want to check
  * Return: 0 or 1
  */
 int _islower(char c)
