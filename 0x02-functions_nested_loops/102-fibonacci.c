@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i;
-	int f1, f2, f3;
+	int f1 = 1, f2 = 2, f3;
 
 	printf("%d, %d", f1, f2);
 	for (i = 0; i <=50; i++)
