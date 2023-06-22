@@ -3,7 +3,7 @@
 /**
  * _isdigit - checks if 0<=c<10
  * @c: the argument we want to test
- * Retun: 1 if true else 0
+ * Return: 1 if true else 0
  */
 
 int _isdigit(int c)
