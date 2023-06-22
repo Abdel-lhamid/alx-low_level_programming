@@ -5,13 +5,13 @@ include "main.h"
  * Return: 0 if lower 1 if upper
  */
 
-int _isupper(char c)
+int _isupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c >= 65 && c <= 90)
 	{
 		return(1);
 	}
-	else if (c >= 'a' && c <= 'z')
+	else
 	{
 		return(0);
 	}
