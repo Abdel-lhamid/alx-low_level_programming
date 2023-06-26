@@ -9,12 +9,12 @@
 void print_rev(char *s)
 {
 	int len = 0;
-	int i;
+	int i = 0;
 
-	while (*s != '\0')
+	while (s[i] != '\0')
 	{
 		len++;
-		s++;
+		i++;
 	}
 
 	for (i = len - 1; i >= 0; i--)
