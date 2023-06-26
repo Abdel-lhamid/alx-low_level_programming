@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include "2-strlen.c"
 /**
  * puts2 - print every other character of the string
  * @str: the string we gonna use
