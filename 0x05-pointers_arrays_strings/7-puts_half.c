@@ -1,5 +1,5 @@
 #include "main.h"
-#include "2-stlen.c"
+#include "2-strlen.c"
 
 /**
  * puts_half - print the last half of the given string
