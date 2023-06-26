@@ -1,4 +1,6 @@
 #include "main.h"
+#include "3-puts.c"
+#include "2-strlen.c"
 
 /**
  * print_rev - print the revers of a string
@@ -17,5 +19,5 @@ void print_rev(char *s)
 		s[i] = s[j];
 		s[j] = temp;
 	}
-	_puts( s);
+	_puts(s);
 }
