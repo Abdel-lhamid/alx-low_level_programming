@@ -25,7 +25,7 @@ int _atoi(char *s)
 		if (*s >= '0' && *s <= '9')
 		{
 			dig = *s - '0';
-			result = result * 10 + (si * dig);
+			result = result * 10 + dig;
 		}
 		else if (result != '0')
 		{
@@ -33,5 +33,5 @@ int _atoi(char *s)
 		}
 		s++;
 	}
-	return (result);
+	return (result * si);
 }
