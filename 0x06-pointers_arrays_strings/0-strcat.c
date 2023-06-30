@@ -4,8 +4,9 @@
  * *_strcat
  * @dest: where the content of the will be concatinated
  * @src: the second text that will be added to dest
+ * Return: dest
  */
-char *_strcat(char *dest,char *src);
+char *_strcat(char *dest, char *src);
 {
 	int i,j;
 	int *pt;
@@ -17,10 +18,7 @@ char *_strcat(char *dest,char *src);
 		dest[i] = src[j];
 		i++;
 	}
-	i++;
 	dest[i] = '\0';
-
-	pt = &dest;
 
 	return (dest);
 }
