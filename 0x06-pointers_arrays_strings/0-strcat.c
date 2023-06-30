@@ -6,6 +6,7 @@
  * @src: the second text that will be added to dest
  * Return: dest
  */
+
 char *_strcat(char *dest, char *src)
 {
 	int i;
