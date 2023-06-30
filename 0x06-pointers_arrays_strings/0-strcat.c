@@ -8,6 +8,7 @@
 char *_strcat(char *dest,char *src);
 {
 	int i,j;
+	int *pt;
 
 	for (i = 0; dest[i] != '\0'; i++);
 
@@ -18,6 +19,8 @@ char *_strcat(char *dest,char *src);
 	}
 	i++;
 	dest[i] = '\0';
+
+	pt = &dest;
 
 	return (dest);
 }
