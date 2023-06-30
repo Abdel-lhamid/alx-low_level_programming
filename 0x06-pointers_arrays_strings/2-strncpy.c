@@ -4,6 +4,7 @@
  * _strncpy - exactly like stncpy
  * @dest: destination
  * @src: the source string we want to copy
+ * @n: the amount of char we want to copy
  * Return: the dest
  *
  */
