@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strcat
+ * _strcat - concatinate two strings
  * @dest: where the content of the will be concatinated
  * @src: the second text that will be added to dest
  * Return: dest
@@ -9,7 +9,6 @@
 char *_strcat(char *dest, char *src);
 {
 	int i,j;
-	int *pt;
 
 	for (i = 0; dest[i] != '\0'; i++);
 
