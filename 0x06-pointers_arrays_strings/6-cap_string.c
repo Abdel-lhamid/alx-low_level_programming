@@ -1,4 +1,4 @@
-#include "mail.h"
+#include "main.h"
 
 /**
  * cap_string - capitalize word of a string
