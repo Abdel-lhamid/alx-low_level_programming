@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * @leet - encodes a string into 1337
+ * leet - encodes a string into 1337
  * @s: the string to manipulate
  *
  * Return: the encoded strring
@@ -15,7 +15,7 @@ char *leet(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; ltrs [j] != '\0'; j++)
+		for (j = 0; ltrs[j] != '\0'; j++)
 		{
 			if (s[i] == ltrs[j])
 			{
