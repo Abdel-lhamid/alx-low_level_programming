@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * string_troupper - turn a string to upper
+ * string_toupper - turn a string to upper
  * @s: the string to work with
  * Return: string capitaalized
  *
  */
 
-char *string_troupper(char *s)
+char *string_toupper(char *s)
 {
 	int i = 0;
 
