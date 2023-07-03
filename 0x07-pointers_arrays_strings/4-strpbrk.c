@@ -5,7 +5,7 @@
  * _strpbrk - locates the first occurrence in the string s
  * @s: string to search
  * @accept: string to search for matches
- * Return: a pointer to the byte in s that matches one of the bytes in accept, or NULL
+ * Return: a pointer to the byte in s that matches in accept, or NULL
  *
  */
 
