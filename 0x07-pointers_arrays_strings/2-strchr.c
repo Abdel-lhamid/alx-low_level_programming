@@ -5,31 +5,25 @@
  * _strchr - search for a specefic 
  * @s: the table to search
  * @c: the char to search for
+ * Return: the pointer to the c char otherwise null
  */
 
 
 char *_strchr(char *s, char c)
 {
-	int i;
-	int point = -1;
-	int len = _strlen(s);
-
-
-	for (i = 0; i < len; i++)
+	while ( *s != '\0')
 	{
-		if (s[i] == c)
+		if (*s == c)
 		{
-			point = i;
-			break;
+			return (s);
 		}
+		s++;
+	}
+	
+	if (*s == c)
+	{
+		return (s);
 	}
 
-	if (point >= 0)
-	{
-		return (point);
-	}
-	else
-	{
-		return NULL;
-	}
+	return NULL;
 }
