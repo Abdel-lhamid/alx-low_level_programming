@@ -1,5 +1,5 @@
 #include "main.h"
-
+#define NULL 0
 
 /**
  * _strchr - search for a specefic 
@@ -8,7 +8,6 @@
  * Return: the pointer to the c char otherwise null
  */
 
-
 char *_strchr(char *s, char c)
 {
 	while ( *s != '\0')
@@ -16,6 +15,7 @@ char *_strchr(char *s, char c)
 		if (*s == c)
 		{
 			return (s);
+			break;
 		}
 		s++;
 	}
