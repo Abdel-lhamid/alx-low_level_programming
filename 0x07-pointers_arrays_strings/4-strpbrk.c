@@ -2,10 +2,10 @@
 #define NULL 0
 
 /**
- * _strspn - return the length of mached char in 2 strings
+ * _strpbrk - locates the first occurrence in the string s
  * @s: string to search
  * @accept: string to search for matches
- * Return: number of bytes matching
+ * Return: a pointer to the byte in s that matches one of the bytes in accept, or NULL
  *
  */
 
