@@ -4,7 +4,7 @@
  * @dest: the destination where the content will be copied
  * @src: the table tha will be copied
  * @n: the number of bytes to copy
- *
+ * Return: the dest table
  *
  */
 
