@@ -19,11 +19,10 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				return (s[i]);
+				s = &s[i];
+				return (s);
 			}
 		}
-		if (accept[j] == '\0')
-			break;
 	}
 	return (NULL);
 }
