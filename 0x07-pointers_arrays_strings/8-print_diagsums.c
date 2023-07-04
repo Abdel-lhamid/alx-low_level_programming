@@ -7,15 +7,12 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, fdiag = 0, sdiag = 0;
+	int i, fdiag = 0, sdiag = 0;
 
 	for (i = 0; i < size; i++)
 	{
-		for (j = 0; j < size; j++)
-		{
-			fdiag += a[i][i];
-			sdiag += a[i][size - i - 1];
-		}
+		fdiag += a[i *size +i];
+		sdiag += a[i *size +(size - i - 1)];
 	}
 
 	printf("%d, %d\n", fdiag, sdiag);
