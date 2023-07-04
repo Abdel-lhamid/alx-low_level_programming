@@ -11,8 +11,8 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		fdiag += a[i *size +i];
-		sdiag += a[i *size +(size - i - 1)];
+		fdiag += a[i * size + i];
+		sdiag += a[i * size + (size - i - 1)];
 	}
 
 	printf("%d, %d\n", fdiag, sdiag);
