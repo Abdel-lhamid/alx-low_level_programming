@@ -13,23 +13,10 @@ void print_diagsums(int *a, int size)
 	{
 		for (j = 0; j < size; j++)
 		{
-			if (i == j)
-				fdiag += a[i][j];
+			fdiag += a[i][i];
+			sdiag += a[i][size - i - 1];
 		}
 	}
-	for (k = 0; k < size; k++)
-	{
-		j = size - 1;
 
-		for (l = size - 1; l < 0; l--)
-		{
-			if (i == j)
-			{
-				sdiag += a[k][l];
-			}
-		}
-		i--;
-	}
-
-	printf("%d, %d", fdiag, sdiag);
+	pintf("%d, %d\n", fdiag, sdiag);
 }
