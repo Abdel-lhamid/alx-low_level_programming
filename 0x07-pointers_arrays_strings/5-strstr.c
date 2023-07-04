@@ -1,5 +1,5 @@
 #include "main.h"
-
+#define NULL 0
 /**
  * _strstr - find the first occurrence of needle in haystack
  * @haystack: the string to search in
@@ -30,5 +30,5 @@ char *_strstr(char *haystack, char *needle)
 			}
 		}
 	}
-	return ('\0');
+	return (NULL);
 }
