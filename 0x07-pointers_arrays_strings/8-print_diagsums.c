@@ -18,5 +18,5 @@ void print_diagsums(int *a, int size)
 		}
 	}
 
-	pintf("%d, %d\n", fdiag, sdiag);
+	printf("%d, %d\n", fdiag, sdiag);
 }
