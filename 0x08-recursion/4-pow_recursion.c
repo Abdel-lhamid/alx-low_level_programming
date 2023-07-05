@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- *
- *
+ * _pow_recursion - function to return x power of Y
+ * @x: first input
+ * @y: second input
+ * Return: x pow Y
  *
  */
 int _pow_recursion(int x, int y)
