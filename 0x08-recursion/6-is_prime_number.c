@@ -12,7 +12,7 @@ int find_prf(int n, int prf)
 		return (1);
 	if (prf < n && n % prf == 0)
 		return (0);
-	find_prf(n, prf + 1);
+	return (find_prf(n, prf + 1));
 }
 /**
  * is_prime_number - a function to check if n is a prime num
