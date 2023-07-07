@@ -10,9 +10,6 @@
 
 int main(int argc, char *argv[])
 {
-	int amount = atoi(argv[1]);
-	int coins = 0;
-
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -23,6 +20,10 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
+
+	int amount = atoi(argv[1]);
+	int coins = 0;
+
 	coins += amount \ 25;
 	amount = amount % 25;
 	coins += amount \ 10;
