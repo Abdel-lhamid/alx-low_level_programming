@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - function that multiplies two numbers.
  * @argc: number of arguments
@@ -7,7 +7,7 @@
  * Return: 0
  */
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
@@ -16,7 +16,7 @@ int main(int argc, int *argv[])
 	}
 	else
 	{
-		printf("%d\n", argv[1] * argv[2]);
+		printf("%d\n", atoi(argv[1]) * atio(argv[2]));
 		return (0);
 	}
 }
