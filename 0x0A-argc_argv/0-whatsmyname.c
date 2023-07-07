@@ -2,8 +2,8 @@
 
 /**
  * main - a function to print the name of the file
- * argc: argument count
- * argv: argument vector
+ * @argc: argument count
+ * @argv: argument vector
  * Return: 0
  */
 
