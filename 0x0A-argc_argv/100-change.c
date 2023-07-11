@@ -24,13 +24,13 @@ int main(int argc, char *argv[])
 	int amount = atoi(argv[1]);
 	int coins = 0;
 
-	coins += amount \ 25;
+	coins += amount / 25;
 	amount = amount % 25;
-	coins += amount \ 10;
+	coins += amount / 10;
 	amount = amount % 10;
-	coins += amount \ 5;
+	coins += amount / 5;
 	amount = amount % 5;
-	coins += amount \ 2;
+	coins += amount / 2;
 	amount = amount % 2;
 	coins += amount;
 	printf("%d\n", coins);
