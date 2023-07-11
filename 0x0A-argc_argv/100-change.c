@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+
 /**
  * main - that prints the minimum number of coins to make change
  * @argc: argument count
@@ -10,6 +10,8 @@
 
 int main(int argc, char *argv[])
 {
+	int coins = 0;
+	int amount;
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -21,8 +23,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	int amount = atoi(argv[1]);
-	int coins = 0;
+	amount = atoi(argv[1]);
 
 	coins += amount / 25;
 	amount = amount % 25;
