@@ -9,31 +9,28 @@
  */
 int main(int argc, char *argv[])
 {
-    int i, j;
-    unsigned int num1, num2;
+	int i, j;
+	unsigned int num1, num2;
 
-    if (argc != 3)
-    {
-        printf("Error\n");
-        exit(98);
-    }
+	if (argc != 3)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	for (i = 1; i < 3; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				exit(98);
+			}
+		}
+	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
 
-    for (i = 1; i < 3; i++)
-    {
-        for (j = 0; argv[i][j] != '\0'; j++)
-        {
-            if (argv[i][j] < '0' || argv[i][j] > '9')
-            {
-                printf("Error\n");
-                exit(98);
-            }
-        }
-    }
-
-    num1 = atoi(argv[1]);
-    num2 = atoi(argv[2]);
-
-    printf("%u\n", num1 * num2);
-    return 0;
+	printf("%u\n", num1 * num2);
+	return (0);
 }
-
