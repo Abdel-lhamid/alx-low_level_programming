@@ -1,22 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
-/**
- * malloc_checked - function that allocates memory using malloc
- * @b: size of the malloc
- * Return: the pointer
- */
-void *malloc_checked(unsigned int b)
-{
-	void *ptr;
-
-	ptr = malloc(b);
-
-	if (ptr == NULL)
-		exit(98);
-
-	return (ptr);
-}
 
 /**
  * string_nconcat - function that concatenates two strings
@@ -36,10 +20,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	if (s1 == NULL)
 		s1 = "";
+	if (n < 0)
+		return (NULL);
 	if (n >= strlen(s2))
 		n = strlen(s2);
 	lenptr = strlen(s1) + n + 1;
-	ptr = malloc_checked(lenptr);
+	ptr = malloc(lenptr);
+
+	if (ptr == NULL)
+		return (NULL);
 
 	for (i = 0; s1[i] != '\0'; i++)
 		ptr[i] = s1[i];
