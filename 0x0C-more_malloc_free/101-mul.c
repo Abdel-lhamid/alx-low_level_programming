@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int i, j;
-	unsigned int num1, num2;
+	unsigned int num1, num2, mul;
 
 	if (argc != 3)
 	{
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
-
-	printf("%u\n", num1 * num2);
+	mul = num1 * num2;
+	printf("%u\n", mul);
 	return (0);
 }
