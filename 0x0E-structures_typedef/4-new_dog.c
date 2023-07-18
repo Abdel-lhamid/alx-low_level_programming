@@ -16,7 +16,7 @@ int _strlen(char *str)
 	return (i);
 }
 /**
- * strcpy - basicaly like strcpy in strirng.h
+ * _strcpy - basicaly like strcpy in strirng.h
  * @dest: copy source to this buffer
  * @src: this is the source to copy
  * Return: copy of original source
