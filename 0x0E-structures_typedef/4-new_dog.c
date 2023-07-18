@@ -1,53 +1,79 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "dog.h"
-#include <string.h>
+#include <stdlib.h>
 
 /**
- * new_dog - create new instance of struct dog
- * @name: member
- * @age: member
- * @owner: member
- * Return: initialized instance of struct dog
+ * _strlen - like strlen in string.h
+ * @s: string to get length of
+ *
+ * Return: length of s
+ */
+int _strlen(char *s)
+{
+	int i = 0;
+
+	for (i = 0; s[i]; i++)
+		;
+	return (i);
+}
+
+/**
+ * _strcpy - copies string from y to x
+ *
+ * @x: pointer to destination of string
+ * @y: pointer to source string to copy from
+ *
+ * Return: pointer to dest
+ */
+char *_strcpy(char *x, char *y)
+{
+	char *a = x;
+
+	while (*y)
+		*a++ = *y++;
+	*a = '\0';
+	return (x);
+}
+
+/**
+ * new_dog - makes a new dog, memory and all
+ * @name: name to create mem and assign to for dog
+ * @age: age to assign to for dog
+ * @owner: owner to create mem and assign to for dog
+ *
+ * Return: pointer to new dog_t (struct dog)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog1;
-	char *copy_of_name;
-	char *copy_of_owner;
+	dog_t *n_d;
 
-	dog1 = malloc(sizeof(dog_t));
-	if (dog1 == NULL)$
+	n_d = malloc(sizeof(dog_t));
+	if (n_d == NULL)
 		return (NULL);
-
-	dog1->age = age;
-
-	if (name != NULL)
+	if (name == NULL)
+		n_d->name = NULL;
+	else
 	{
-		copy_of_name = malloc(strlen(name) + 1);
-		if (copy_of_name == NULL)
+		n_d->name = malloc(_strlen(name) + 1);
+		if (n_d->name == NULL)
 		{
-			free(dog1);
+			free(n_d);
 			return (NULL);
 		}
-		dog1->name = strcpy(copy_of_name, name);
+		n_d->name = _strcpy(n_d->name, name);
 	}
+	if (owner == NULL)
+		n_d->owner = NULL;
 	else
-		dog1->name = NULL;
-
-	if (owner != NULL)
 	{
-		copy_of_owner = malloc(strlen(owner) + 1);
-		if (copy_of_owner == NULL)
+		n_d->owner = malloc(_strlen(owner) + 1);
+		if (n_d->owner == NULL)
 		{
-			free(copy_of_name);
-			free(dog1);
+			free(n_d->name);
+			free(n_d);
 			return (NULL);
 		}
-		dog1->owner = strcpy(copy_of_owner, owner);
+		n_d->owner = _strcpy(n_d->owner, owner);
 	}
-	else
-		dog1->owner = NULL;
-
-	return (dog1);
+	n_d->age = age;
+	return (new_d);
 }
