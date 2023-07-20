@@ -1,5 +1,5 @@
 /**
- * op_add - add
+ * op_add - sum
  * @a: integer
  * @b: integer
  * Return: result
@@ -10,7 +10,7 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - subtract
+ * op_sub - subtraction
  * @a: integer
  * @b: integer
  * Return: result
@@ -21,7 +21,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - multiply
+ * op_mul - multiplication
  * @a: integer
  * @b: integer
  * Return: result
@@ -43,7 +43,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - modulus for remainder
+ * op_mod - modulus
  * @a: integer
  * @b: integer
  * Return: result
