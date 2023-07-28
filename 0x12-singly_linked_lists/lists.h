@@ -19,3 +19,5 @@ typedef struct list_struct
 } list_t;
 
 size_t print_list(const list_t *h);
+
+#endif
