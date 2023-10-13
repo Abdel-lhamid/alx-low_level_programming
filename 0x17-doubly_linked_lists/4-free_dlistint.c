@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * free_dlistint - frees a doubly linked list with only int data, no strings
