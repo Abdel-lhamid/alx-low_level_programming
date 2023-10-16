@@ -1,5 +1,5 @@
 #include "main.h"
-#include "2-strlen.c"
+
 
 /**
  * *_strcpy - coppit the string src to dest
