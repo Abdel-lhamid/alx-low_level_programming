@@ -4,15 +4,15 @@ int add(int a, int b) {
     return a + b;
 }
 
-int subtract(int a, int b) {
+int sub(int a, int b) {
     return a - b;
 }
 
-int multiply(int a, int b) {
+int mul(int a, int b) {
     return a * b;
 }
 
-int divide(int a, int b) {
+int div(int a, int b) {
     if (b == 0) {
         printf("Error: Division by zero\n");
         return 0;  // You can choose to handle this error differently
@@ -20,7 +20,7 @@ int divide(int a, int b) {
     return a / b;
 }
 
-int modulus(int a, int b) {
+int mod(int a, int b) {
     if (b == 0) {
         printf("Error: Modulus by zero\n");
         return 0;  // You can choose to handle this error differently
