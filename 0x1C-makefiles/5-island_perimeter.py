@@ -3,12 +3,14 @@
 Defines a function to calculate the perimeter of an island.
 """
 
+
 def island_perimeter(grid):
     """
     Calculates the perimeter of the island described in the grid.
 
     Args:
-        grid (list[list[int]]): A list of lists of integers representing the grid.
+        grid (list[list[int]]): A list of lists of
+        integers representing the grid.
 
     Returns:
         int: The perimeter of the island.
