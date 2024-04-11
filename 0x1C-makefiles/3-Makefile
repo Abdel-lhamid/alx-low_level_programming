@@ -1,48 +1,30 @@
+#target all
+#rm -f ignore nonexisting files and arguments
 
-# Compiler
+#variables
+
 CC = gcc
-
-# Source files
-SRC = main.c school.c
-
-# Object files
-OBJ = $(SRC:.c=.o)
-
-# Executable name
+SRC = school.c main.c
+OBJ = $(patsubst %.c,%.o,$(SRC))
 NAME = school
-
-# Program to delete files
 RM = rm -f
 
-# Flags for compiler
-CFLAGS = -Wall -Werror -Wextra -pedantic
+#compilation target
 
-# Default rule
-all: $(NAME)
-
-# Rule to build executable
-$(NAME): $(OBJ)
+#compile all updated sources
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-# Rule to compile source files
-%.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $<
-
-# Rule to clean Emacs and Vim temporary files along with executable
+#clean emacs and VI temp files along executable
 clean:
-	$(RM) $(OBJ) *~
+	$(RM) *.swp *~ $(NAME)
 
-# Rule to delete object files
+#clean object files
 oclean:
 	$(RM) $(OBJ)
 
-# Rule to delete Emacs and Vim temporary files, the executable, and the object files
+#clean all
 fclean: clean oclean
-	$(RM) $(NAME)
 
-# Rule to force recompilation of all source files
+#recompile all
 re: fclean all
-
-# Phony targets
-.PHONY: all clean oclean fclean re
-
