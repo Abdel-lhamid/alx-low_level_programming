@@ -1,4 +1,4 @@
-#include "sorting_alogs.h"
+#include "search_alogs.h"
 #include <math.h>
 
 /**
