@@ -1,4 +1,4 @@
-#include "search_alogs.h"
+#include "search_algos.h"
 #include <math.h>
 
 /**
@@ -16,13 +16,12 @@ int jump_search(int *array, size_t size, int value)
 	if (!array || size == 0)
 		return (-1);
 
-	h = j
-		while (array[h] < value && h < (int)size)
-		{
-			l = h;
-			h += j;
-			printf("Value checked array[%d] = [%d]\n", l, array[l]);
-		}
+	while (array[h] < value && h < (int)size)
+	{
+		l = h;
+		h += j;	
+		printf("Value checked array[%d] = [%d]\n", l, array[l]);
+	}
 
 	printf("Value found between indexes [%d] and [%d]\n", l, h);
 	while (l < (int)size)
@@ -30,6 +29,7 @@ int jump_search(int *array, size_t size, int value)
 		printf("Value checked array[%d] = [%d]\n", l, array[l]);
 		if (array[l] == value)
 			return (value);
+		l++;
 	}
 	return (-1);
 }
